@@ -8,12 +8,10 @@ function calcShipping(sum, min, shipping) {
     let shippingSum; // создайте переменную shippingSum
 
 if (productsSum == 0 || productsSum >= freeShippingMinSum) {
-    shippingSum = 0;
-} // если productsSum равно 0 или если productsSum Больше или равна freeShippingMinSum, то shippingSum присвоить значение 0
-  
+    shippingSum = 0; // если productsSum равно 0 или если productsSum Больше или равна freeShippingMinSum, то shippingSum присвоить значение 0
 } else ((productsSum > 0) && (productsSum < freeShippingMinSum))  {
-    shippingSum = shippingPrice;
-}// если productsSum больше 0 и меньше freeShippingMinSum,то shippingSum присвоить значение shippingPrice
+    shippingSum = shippingPrice; // если productsSum больше 0 и меньше freeShippingMinSum,то shippingSum присвоить значение shippingPrice
+}
 
     // Конец решения задания №2.1.
 
@@ -29,10 +27,12 @@ function calcDiscount(sum, min, discount) {
 
     let discountPrice; // создайте переменную discountPrice
 
-    if (productsSum >= discountMinSum){ // если productsSum больше или равно discountMinSum,
+    if (productsSum >= discountMinSum) { // если productsSum больше или равно discountMinSum,
         discountSum = discountSum*discountPart/100; // то присвойте discountSum значение discountPart процентов от productsSum,
-    } else
-    discountSum = 0; // иначе присвойте discountSum значение 0
+    } else {
+        discountSum = 0; // иначе присвойте discountSum значение 0
+    }
+    
 
     // Конец решения задания №2.2.
 
