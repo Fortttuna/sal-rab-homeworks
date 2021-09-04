@@ -1,5 +1,5 @@
 function renderCartItem(item) {
-    const product = item;
+    const product = item};
 
     // Задание №3.1. Формирование строки корзины
 
