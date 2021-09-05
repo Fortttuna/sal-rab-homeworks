@@ -7,19 +7,19 @@ function renderCartItem(item) {
     // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
     // id - идентификатор
     // title - наименование
-    let price = price; // price - цена
-    let count = count; // count - количество
+    // price - цена
+    // count - количество
 
     // сформируйте строку itemCountText вида:
     // количество × цена ₽ = стоимость ₽
     // например,
     // 5 × 500.00 ₽ = 2500 ₽
     let itemCountText = ""; // 1. Создайте переменную itemCountText, равную пустой строке
-    let itemCountText = itemCountText + count; // 2. Присвойте переменной itemCountText результат склеивания itemCountText и количества
+    let itemCountText = itemCountText + product.count; // 2. Присвойте переменной itemCountText результат склеивания itemCountText и количества
     let itemCountText = itemCountText + "×"; // 3. Присвойте переменной itemCountText результат склеивания itemCountText и ` × `
-    let itemCountText = itemCountText + price; // 4. Присвойте переменной itemCountText результат склеивания itemCountText и цены
+    let itemCountText = itemCountText + product.price; // 4. Присвойте переменной itemCountText результат склеивания itemCountText и цены
     let itemCountText = itemCountText + " ₽ = ";// 5. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽ = `
-    let sum = count * price; // 6. Создайте переменную sum и присвойте ей значение произведения количества и цены
+    let sum = product.count * product.price; // 6. Создайте переменную sum и присвойте ей значение произведения количества и цены
     let itemCountText = itemCountText + sum;// 7. Присвойте переменной itemCountText результат склеивания itemCountText и sum
     let itemCountText = itemCountText + sum + " ₽ = ";// 8. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽`
 
