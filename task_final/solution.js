@@ -47,7 +47,7 @@ function sendRequest(name, phone, address, goods, sum) {
     data.order.address = address;
     data.order.sum = sum;
 
-    data.client = 'Иван +7(987)65-43-210';
+    data.client = client;
 
     let jsonData = JSON.stringify(data);
 
