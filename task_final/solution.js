@@ -44,7 +44,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
     }
 
-    data.order.address = "ул. Ленина, дом 2, 4 подъезд, 5 этаж, кв 53";
+    data.order.address = address;
     data.order.sum = sum;
 
     data.client = name + " " + phone;
